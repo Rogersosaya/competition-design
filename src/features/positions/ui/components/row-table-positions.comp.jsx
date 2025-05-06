@@ -5,7 +5,7 @@ function RowTablePositions() {
   return (
     <Link
       to={`/teams/21-2`}
-      className=" max-w-[1000px]  flex justify-between my-3 text-sm md:text-xl items-center bg-black h-14 rounded-xl  transition-all duration-400 md:cursor-pointer hover:bg-zinc-950"
+      className=" max-w-full md:max-w-[1000px]  flex justify-between my-3 text-sm md:text-xl items-center bg-black h-14 rounded-xl  transition-all duration-400 md:cursor-pointer hover:bg-zinc-950"
     >
       <div className="w-[150px] md:w-[500px] flex items-center  h-full">
         <div

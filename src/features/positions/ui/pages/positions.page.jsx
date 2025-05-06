@@ -10,7 +10,7 @@ function PositionsPage() {
         <TitleTwo title="TABLA DE POSICIONES" />
       </div>
 
-      <div className=" max-w-[1000px]  flex justify-between my-2 text-md md:text-2xl items-center">
+      <div className="max-w-full md:max-w-[1000px]  flex justify-between my-2 text-md md:text-2xl items-center">
         <div className="w-[150px] md:w-[500px]"></div>
         <div className="w-20">
           <FaMedal className="mx-auto text-goldMedal" />

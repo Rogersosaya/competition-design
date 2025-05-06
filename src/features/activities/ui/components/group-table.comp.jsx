@@ -49,7 +49,7 @@ function GroupTable() {
       ];
   return (
     <div className="grid grid-cols-11 bg-black  gap-y-6 text-center  text-xs rounded-4xl overflow-hidden pb-4 ">
-      <div className="col-span-11 grid grid-cols-11 gap-2 gap-y-6 bg-gradient-to-r from-secondary to-black  px-4 py-4 justify-items-center">
+      <div className="col-span-11 grid grid-cols-11 gap-2 gap-y-6 bg-gradient-to-r from-secondary to-black px-2 md:px-4 py-4 justify-items-center">
         <div>POS</div>
         <div className="col-span-3">Equipo</div>
         <div>PJ</div>
@@ -63,7 +63,7 @@ function GroupTable() {
       {rowsInTableOfGroups.map((row, index) => (
         <div
           key={index}
-          className="col-span-11 grid grid-cols-11 gap-2 gap-y-6 text-center px-4 items-center "
+          className="col-span-11 grid grid-cols-11 gap-2 gap-y-6 text-center px-2 md:px-4 items-center "
         >
           <div>{row.position}</div>
           <div className="col-span-3 flex items-center gap-x-2 justify-center">
