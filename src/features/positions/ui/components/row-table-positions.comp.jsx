@@ -5,7 +5,7 @@ function RowTablePositions() {
   return (
     <Link
       to={`/teams/21-2`}
-      className=" max-w-full md:max-w-[1000px]  flex justify-between my-3 text-sm md:text-xl items-center bg-black h-14 rounded-xl  transition-all duration-400 md:cursor-pointer hover:bg-zinc-950"
+      className=" md:max-w-[1000px]  flex justify-between my-3 text-sm md:text-xl items-center bg-black h-14 rounded-xl  transition-all duration-400 md:cursor-pointer hover:bg-zinc-950 md:flex-none flex-1"
     >
       <div className="w-[150px] md:w-[500px] flex items-center  h-full">
         <div
@@ -27,10 +27,10 @@ function RowTablePositions() {
           className="w-[50px] h-[50px] -ml-6 md:scale-125 scale-110 rounded-full"
         ></img>
       </div>
-      <div className="w-20 text-center">5</div>
-      <div className="w-20 text-center">12</div>
-      <div className="w-20 text-center">16</div>
-      <div className="w-20 text-center">25</div>
+      <div className="w-10 md:w-20 text-center">5</div>
+      <div className="w-10 md:w-20 text-center">12</div>
+      <div className="w-10 md:w-20 text-center">16</div>
+      <div className="w-10 md:w-20 text-center">25</div>
     </Link>
   );
 }

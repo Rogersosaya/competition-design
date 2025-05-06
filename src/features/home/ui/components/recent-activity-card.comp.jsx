@@ -6,19 +6,19 @@ function RecentActivityCard() {
     <div className="bg-gradient-to-r from-gray30 p-0.5 to-primary rounded-md relative">
       <div className="bg-linear-to-r from-gray30 to-primary-dark  rounded-md flex p-4 items-center justify-end py-8">
         <div className="flex gap-x-6 md:gap-x-12">
-          <div className="text-yellow-500 text-xl md:text-4xl font-bold flex items-center gap-x-4">
+          <div className="text-gold text-xl md:text-4xl font-bold flex items-center gap-x-4">
             <div>
               <AiOutlineTrophy />
             </div>
             <div>21-2</div>
           </div>
-          <div className="text-zinc-400 text-lg md:text-2xl font-bold flex items-center gap-x-4">
+          <div className="text-silver text-lg md:text-2xl font-bold flex items-center gap-x-4">
             <div>
               <AiOutlineTrophy />
             </div>
             <div>21-2</div>
           </div>
-          <div className="text-yellow-700 md:text-xl font-bold  flex items-center gap-x-4 ">
+          <div className="text-bronze md:text-xl font-bold  flex items-center gap-x-4 ">
             <div>
               <AiOutlineTrophy />
             </div>

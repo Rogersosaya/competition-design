@@ -12,16 +12,16 @@ function PositionsPage() {
 
       <div className="max-w-full md:max-w-[1000px]  flex justify-between my-2 text-md md:text-2xl items-center">
         <div className="w-[150px] md:w-[500px]"></div>
-        <div className="w-20">
-          <FaMedal className="mx-auto text-goldMedal" />
+        <div className="w-10 md:w-20 text-center">
+          <FaMedal className="mx-auto text-gold" />
         </div>
-        <div className="w-20">
-          <FaMedal className="mx-auto text-silverMedal" />
+        <div className="w-10 md:w-20 text-center">
+          <FaMedal className="mx-auto text-silver" />
         </div>
-        <div className="w-20">
-          <FaMedal className="mx-auto text-bronzeMedal" />
+        <div className="w-10 md:w-20 text-center">
+          <FaMedal className="mx-auto text-bronze" />
         </div>
-        <div className="w-20 text-center">Pts</div>
+        <div className="w-10 md:w-20 text-center">Pts</div>
       </div>
 
       <RowTablePositions />
