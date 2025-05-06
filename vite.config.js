@@ -4,5 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "https://Rogersosaya.github.io/competition-design"
+  base: "/competition-design"
 });
