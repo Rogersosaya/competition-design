@@ -7,6 +7,7 @@ import MatchCard from "../components/match-card.comp";
 import GroupTable from "../components/group-table.comp";
 import MatchBracket from "../components/match-bracket.comp";
 import TitleTwo from "../../../../common/ui/components/title-two.comp";
+import transition from "../../../../common/helpers/transition";
 
 function ActivityPage() {
   const { id } = useParams();
@@ -165,4 +166,4 @@ function ActivityPage() {
   );
 }
 
-export default ActivityPage;
+export default transition(ActivityPage);

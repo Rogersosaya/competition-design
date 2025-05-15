@@ -9,6 +9,7 @@ import NextTeamActivityCard from "../components/next-team-activity-card.comp";
 import { HiMiniTrophy } from "react-icons/hi2";
 import AchievementCard from "../components/achievement-card.comp";
 import TeamCard from "../components/team-card.comp";
+import transition from "../../../../common/helpers/transition";
 
 function TeamPage() {
   const { id } = useParams();
@@ -123,4 +124,4 @@ function TeamPage() {
   );
 }
 
-export default TeamPage;
+export default transition(TeamPage);

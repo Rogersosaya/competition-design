@@ -3,6 +3,7 @@ import Title from "../../../../common/ui/components/title.comp";
 import { AiOutlineControl } from "react-icons/ai";
 import TitleTwo from "../../../../common/ui/components/title-two.comp";
 import ActivityCard from "../components/activity-card.comp";
+import transition from "../../../../common/helpers/transition";
 
 function ActivitiesPage() {
   const sports = [
@@ -34,7 +35,7 @@ function ActivitiesPage() {
     { title: "Overwatch", color: "bg-purple-700", urlImage: "/sports/1.jpg" },
   ];
   return (
-    <div className="flex-1 bg-gray30 px-6 py-12 rounded-md space-y-2 ">
+    <div className="flex-1 bg-gray30 px-6 py-12 rounded-md space-y-2 h-full">
       <TitleTwo title="ACTIVIDADES" />
       <div className="flex flex-col gap-y-12">
         <div className="flex flex-col gap-y-2">
@@ -88,4 +89,4 @@ function ActivitiesPage() {
   );
 }
 
-export default ActivitiesPage;
+export default transition(ActivitiesPage);

@@ -8,7 +8,7 @@ function TeamCard({ name, urlImage, color }) {
       to={`/teams/${name}`}
       className={clsx(
         `min-w-38 md:min-w-52 rounded-3xl   transition-all duration-400 bg-black hover:bg-zinc-900 relative overflow-hidden md:flex-none flex-1`
-      )}
+      )} 
     >
       <img
         src={urlImage}

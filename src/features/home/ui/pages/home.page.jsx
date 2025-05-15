@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../../../../common/ui/components/title.comp";
 import { AiOutlineTrophy } from "react-icons/ai";
 import RecentActivityCard from "../components/recent-activity-card.comp";
+import transition from "../../../../common/helpers/transition";
 
 function HomePage() {
   return (
@@ -93,4 +94,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default transition(HomePage);
