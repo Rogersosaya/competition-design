@@ -9,8 +9,8 @@ import { motion } from "framer-motion";
 function MainLayout() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   return (
-    <div className="p-2 min-h-screen">
-      <NavBar setIsSideMenuOpen={setIsSideMenuOpen} />
+    <div className="p-2 md:py-5 md:pr-5  min-h-screen">
+      {/* <NavBar setIsSideMenuOpen={setIsSideMenuOpen} /> */}
       <SideBarMovil
         isSideMenuOpen={isSideMenuOpen}
         setIsSideMenuOpen={setIsSideMenuOpen}

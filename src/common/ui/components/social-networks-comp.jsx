@@ -33,7 +33,9 @@ function SocialNetworks({isExtendSidebar}) {
     },
   ];
   return (
-    <div className={clsx("space-y-2 mt-14 transition-all duration-1000",  isExtendSidebar ? "flex" : "block")}>
+    <div className={clsx("space-y-2 mt-14 transition-all duration-1000",  
+    // isExtendSidebar ? "flex" : "block"
+    )}>
       {socialNetworksData.map((network, index) => (
         <div key={index}>
           <div

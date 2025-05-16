@@ -39,8 +39,8 @@ function SideBar() {
   ];
 
   return (
-    <div className=" flex-col bg-gray30 px-2 py-4 rounded-md space-y-2 md:flex hidden">
-      <div className="transition-all duration-300 p-1.5 hover:bg-gray25">
+    <div className=" flex-col  rounded-md gap-y-2 md:flex hidden ">
+      {/* <div className="transition-all duration-300 p-1.5 hover:bg-gray25">
         <div
           className="p-2 flex justify-end cursor-pointer"
           onClick={() => setisExtendSidebar(!isExtendSidebar)}
@@ -51,10 +51,10 @@ function SideBar() {
             <AiOutlineRightSquare className="text-gray10 text-4xl " />
           )}
         </div>
-      </div>
+      </div> */}
       <div className="relative">
         <motion.div
-          className="text-2xl bg-gray25 flex p-3.5 absolute top-0 w-full rounded-md"
+          className="h-20 w-20 bg-black flex p-3.5 absolute top-0  rounded-xl"
           initial={{ y: "0" }}
           animate={{
             y:
@@ -79,52 +79,21 @@ function SideBar() {
         >
           &nbsp;
         </motion.div>
-
-        {routes.map((route, index) => (
-          <Link to={route.url} key={index} className="relative">
-            <div
-              className={clsx(
-                "transition-all duration-300 p-1.5 hover:bg-gray25 rounded-md"
-                // location.pathname === route.url && "bg-gray25 "
-              )}
-            >
-              <div
-                className={clsx(
-                  `p-2 rounded-md cursor-pointer flex items-end gap-x-5 transition-all duration-200 w-12`,
-                  {
-                    "w-80": isExtendSidebar,
-                  }
-                )}
-              >
-                <div className="w-full flex gap-x-3 ">
-                  <div
-                    className={clsx(
-                      location.pathname === route.url ? "text-primary" : ""
-                    )}
-                  >
-                    {route.icon}
-                  </div>
-                  <AnimatePresence>
-                    {isExtendSidebar && (
-                      <motion.div
-                        initial={{ opacity: 0, x: -80 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: -80 }}
-                        transition={{ duration: 0.2 }}
-                        className="text-2xl"
-                      >
-                        {route.title}
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
-                </div>
+        <div className="relative top-0">
+          {routes.map((route, index) => (
+            <Link to={route.url} key={index}>
+              <div to={route.url} key={index} className="  h-20 w-20 flex flex-col items-center gap-y-2 p-3.5 ">
+                <div className={clsx(location.pathname == route.url ? "text-primary" : "text-primary-dark")}>{route.icon}</div>
+                <div className={clsx("text-xs",location.pathname == route.url ? "" : "text-gray-400")}>{route.title}</div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
-      <div className="flex">
-        <SocialNetworks isExtendSidebar={isExtendSidebar} />
+      <div className="flex justify-center">
+        <SocialNetworks
+        // isExtendSidebar={isExtendSidebar}
+        />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function ActivityCard({title , color, urlImage, state}) {
   return (
-    <Link to={`/activities/${title}`} className={clsx(`flex-1  rounded-md relative h-40 min-w-80  overflow-hidden border-4 border-black hover:border-zinc-800 transition-all duration-300` )}>
+    <Link to={`/activities/${title}`} className={clsx(`flex-1   relative h-40 min-w-80  overflow-hidden    transition-all duration-300  rounded-xl  bg-black  ring-gray22 ring-1` )}>
       <img src="/1.png" alt="" className="absolute top-0 h-full w-full object-cover" />
       <img
         src={urlImage}

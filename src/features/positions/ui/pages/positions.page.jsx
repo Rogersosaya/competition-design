@@ -3,10 +3,13 @@ import { FaMedal } from "react-icons/fa";
 import RowTablePositions from "../components/row-table-positions.comp";
 import TitleTwo from "../../../../common/ui/components/title-two.comp";
 import transition from "../../../../common/helpers/transition";
+import BorderAnimation from "../../../../common/ui/components/border-animation.comp";
 
 function PositionsPage() {
   return (
-    <div className="flex-1 bg-gray30 md:px-6  py-12 rounded-md space-y-2 h-full">
+    <BorderAnimation>
+    
+    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black   md:px-6  py-12 space-y-2 h-full">
       <div className="px-6 md:px-0">
         <TitleTwo title="TABLA DE POSICIONES" />
       </div>
@@ -36,6 +39,8 @@ function PositionsPage() {
       <RowTablePositions />
       <RowTablePositions />
     </div>
+    </BorderAnimation>
+
   );
 }
 

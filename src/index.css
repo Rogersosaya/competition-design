@@ -2,10 +2,11 @@
 @theme {
   --color-gray30: #1c1c1d;
   --color-gray25: #2b2a2b;
+  --color-gray22: #52525c;
   --color-gray20: #959797;
   --color-gray10: #feffff;
   --color-primary: #17c8ff;
-  --color-primary-dark: #073b4b;
+  --color-primary-dark: #0b5065;
   --color-secondary: #fe5c01;
   --color-secondary-dark: #451900;
   --color-tertiary: #acfe00;

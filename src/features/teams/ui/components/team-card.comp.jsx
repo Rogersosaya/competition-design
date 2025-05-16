@@ -7,7 +7,7 @@ function TeamCard({ name, urlImage, color }) {
     <Link
       to={`/teams/${name}`}
       className={clsx(
-        `min-w-38 md:min-w-52 rounded-3xl   transition-all duration-400 bg-black hover:bg-zinc-900 relative overflow-hidden md:flex-none flex-1`
+        `min-w-38 md:min-w-52 rounded-3xl   transition-all duration-400 bg-black hover:bg-zinc-900 relative overflow-hidden md:flex-none flex-1 ring-gray22 ring-1`
       )} 
     >
       <img
@@ -23,7 +23,7 @@ function TeamCard({ name, urlImage, color }) {
           className="mb-40 md:mb-56 rounded-full overflow-hidden w-24 mt-4 "
           alt=""
         />
-        <div className="text-center  font-bold text-3xl  text-shadow-2xs text-shadow-primary">
+        <div className="text-center  font-bold text-3xl  text-shadow-2xs text-shadow-secondary">
           {name}
         </div>
       </div>

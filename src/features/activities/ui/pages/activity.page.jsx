@@ -8,6 +8,7 @@ import GroupTable from "../components/group-table.comp";
 import MatchBracket from "../components/match-bracket.comp";
 import TitleTwo from "../../../../common/ui/components/title-two.comp";
 import transition from "../../../../common/helpers/transition";
+import BorderAnimation from "../../../../common/ui/components/border-animation.comp";
 
 function ActivityPage() {
   const { id } = useParams();
@@ -65,7 +66,9 @@ function ActivityPage() {
   ];
 
   return (
-    <div className="flex-1 bg-black rounded-md relative">
+    <BorderAnimation>
+    
+    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black  ring-gray22 ring-1 relative h-full">
       <div className="w-full absolute top-0">
         <img
           src="/sports/1.jpg"
@@ -163,6 +166,8 @@ function ActivityPage() {
         </div>
       </div>
     </div>
+    </BorderAnimation>
+
   );
 }
 

@@ -4,6 +4,7 @@ import { AiOutlineControl } from "react-icons/ai";
 import TitleTwo from "../../../../common/ui/components/title-two.comp";
 import ActivityCard from "../components/activity-card.comp";
 import transition from "../../../../common/helpers/transition";
+import BorderAnimation from "../../../../common/ui/components/border-animation.comp";
 
 function ActivitiesPage() {
   const sports = [
@@ -35,10 +36,12 @@ function ActivitiesPage() {
     { title: "Overwatch", color: "bg-purple-700", urlImage: "/sports/1.jpg" },
   ];
   return (
-    <div className="flex-1 bg-gray30 px-6 py-12 rounded-md space-y-2 h-full">
+    <BorderAnimation>
+
+    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black   px-6 py-12  space-y-2 h-full">
       <TitleTwo title="ACTIVIDADES" />
       <div className="flex flex-col gap-y-12">
-        <div className="flex flex-col gap-y-2">
+        <div className="flex flex-col gap-y-4">
           <Title icon={<AiOutlineControl className="" />} title="Deportes" />
           <div className="flex gap-x-8 gap-y-8  flex-wrap">
             {sports.map((sport, index) => (
@@ -86,6 +89,8 @@ function ActivitiesPage() {
         </div>
       </div>
     </div>
+    </BorderAnimation>
+
   );
 }
 
