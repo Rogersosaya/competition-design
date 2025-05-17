@@ -8,39 +8,37 @@ import BorderAnimation from "../../../../common/ui/components/border-animation.c
 function PositionsPage() {
   return (
     <BorderAnimation>
-    
-    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black   md:px-6  py-12 space-y-2 h-full">
-      <div className="px-6 md:px-0">
-        <TitleTwo title="TABLA DE POSICIONES" />
+      <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black   md:px-6  py-12 space-y-2 md:min-h-[calc(100vh-40px)] min-h-[calc(100vh-16px)]">
+        <div className="px-6 md:px-0">
+          <TitleTwo title="TABLA DE POSICIONES" />
+        </div>
+
+        <div className="max-w-full md:max-w-[1000px]  flex justify-between my-2 text-md md:text-2xl items-center md:mx-0 mx-2">
+          <div className="w-[135px] md:w-[500px]"></div>
+          <div className="w-10 md:w-20 text-center">
+            <FaMedal className="mx-auto text-gold" />
+          </div>
+          <div className="w-10 md:w-20 text-center">
+            <FaMedal className="mx-auto text-silver" />
+          </div>
+          <div className="w-10 md:w-20 text-center">
+            <FaMedal className="mx-auto text-bronze" />
+          </div>
+          <div className="w-10 md:w-20 text-center">Pts</div>
+        </div>
+
+        <RowTablePositions />
+        <RowTablePositions />
+
+        <RowTablePositions />
+
+        <RowTablePositions />
+        <RowTablePositions />
+        <RowTablePositions />
+        <RowTablePositions />
+        <RowTablePositions />
       </div>
-
-      <div className="max-w-full md:max-w-[1000px]  flex justify-between my-2 text-md md:text-2xl items-center">
-        <div className="w-[150px] md:w-[500px]"></div>
-        <div className="w-10 md:w-20 text-center">
-          <FaMedal className="mx-auto text-gold" />
-        </div>
-        <div className="w-10 md:w-20 text-center">
-          <FaMedal className="mx-auto text-silver" />
-        </div>
-        <div className="w-10 md:w-20 text-center">
-          <FaMedal className="mx-auto text-bronze" />
-        </div>
-        <div className="w-10 md:w-20 text-center">Pts</div>
-      </div>
-
-      <RowTablePositions />
-      <RowTablePositions />
-
-      <RowTablePositions />
-
-      <RowTablePositions />
-      <RowTablePositions />
-      <RowTablePositions />
-      <RowTablePositions />
-      <RowTablePositions />
-    </div>
     </BorderAnimation>
-
   );
 }
 

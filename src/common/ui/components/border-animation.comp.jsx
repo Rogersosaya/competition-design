@@ -12,7 +12,7 @@ function BorderAnimation({ children }) {
   return (
     <div className="relative h-full">
       <motion.div
-        className="absolute -inset-[1px] rounded-xl"
+        className="absolute -inset-[1.5px] rounded-xl"
         style={{
           background: rotatingBg,
         }}

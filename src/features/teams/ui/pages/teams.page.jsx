@@ -32,7 +32,7 @@ function TeamsPage() {
   return (
     <BorderAnimation>
 
-    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black    space-y-2 py-12 h-full  px-6">
+    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black    space-y-2 py-12 h-full  px-6 md:min-h-[calc(100vh-40px)] min-h-[calc(100vh-16px)]">
       <TitleTwo  title="EQUIPOS" />
       {/* <div className="text-3xl font-semibold mb-4">Teams</div> */}
       <div className="flex gap-x-4 md:gap-x-8 gap-y-4  flex-wrap justify-stretch ">

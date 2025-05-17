@@ -68,7 +68,7 @@ function ActivityPage() {
   return (
     <BorderAnimation>
     
-    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black  ring-gray22 ring-1 relative h-full">
+    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black  ring-gray22 ring-1 relative md:min-h-[calc(100vh-40px)] min-h-[calc(100vh-16px)]">
       <div className="w-full absolute top-0">
         <img
           src="/sports/1.jpg"

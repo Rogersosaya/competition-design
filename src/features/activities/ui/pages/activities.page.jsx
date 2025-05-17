@@ -38,7 +38,7 @@ function ActivitiesPage() {
   return (
     <BorderAnimation>
 
-    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black   px-6 py-12  space-y-2 h-full">
+    <div className="flex-1 shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl  bg-black   px-6 py-12  space-y-2 h-full md:min-h-[calc(100vh-40px)] min-h-[calc(100vh-16px)]">
       <TitleTwo title="ACTIVIDADES" />
       <div className="flex flex-col gap-y-12">
         <div className="flex flex-col gap-y-4">

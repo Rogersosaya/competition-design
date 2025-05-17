@@ -54,7 +54,7 @@ function TeamPage() {
   return (
     <BorderAnimation>
 
-    <div className="flex-1 bg-gradient-to-b from-red-900  to-40%  to-black px-6 py-12  md:block shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl     h-full">
+    <div className="flex-1 bg-gradient-to-b from-red-900  to-40%  to-black px-6 py-12  md:block shadow-[0_0_10px_rgb(0,0,0,0.5)] shadow-gray-700 rounded-xl   md:min-h-[calc(100vh-40px)] min-h-[calc(100vh-16px)]">
       <div className="md:flex mb-12 md:mb-24">
         <div className="md:flex items-center md:mr-28">
           <div className="h-46 w-46  md:mr-4 mx-auto">
